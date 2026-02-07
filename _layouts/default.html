@@ -1,17 +1,21 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    <main class="page">
-      <header class="site-header">
-        <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
-        <p class="tagline">{{ site.description }}</p>
-      </header>
-      <section class="content">
-        {{ content }}
-      </section>
-    </main>
-  </body>
+
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+  {% include header.html %}
+  <main class="page">
+    <!-- <section class="content"> -->
+      {{ content }}
+    <!-- </section> -->
+  </main>
+  <footer class="site-footer">
+    © Copyright {{ site.time | date: "%Y" }} {{ site.author }}
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
 </html>

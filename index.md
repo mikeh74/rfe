@@ -3,6 +3,10 @@ layout: default
 title: "Home"
 ---
 
-# Radio Free Europe
+<div data-bg-image="./assets/images/IMG_8365.jpg" class="banner">
 
-Yet another developer blog site.
+<h1>Radio Free Europe</h1>
+
+<p>Yet another developer blog site.</p>
+
+</div>
