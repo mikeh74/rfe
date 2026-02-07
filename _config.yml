@@ -1,0 +1,11 @@
+title: "Jekyll Starter"
+description: "A minimal Jekyll site scaffold."
+baseurl: ""
+url: ""
+
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+
+collections:
+  posts:
+    output: true

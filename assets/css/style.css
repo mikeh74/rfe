@@ -1,0 +1,46 @@
+:root {
+  --bg: #f7f4ef;
+  --text: #1f1b16;
+  --accent: #1b6b5b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Georgia", "Times New Roman", serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.site-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.25rem;
+}
+
+.site-header a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.tagline {
+  margin: 0 0 2rem;
+  color: #5c5247;
+}
+
+.content {
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.content a {
+  color: var(--accent);
+}
