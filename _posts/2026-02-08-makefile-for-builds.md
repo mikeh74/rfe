@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Makefile for builds"
+tags: [Python, CSS, JS, CI/CD]
 ---
 
 # Using makefile for builds and project workflows
