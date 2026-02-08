@@ -1,0 +1,14 @@
+{
+  "name": "rfe-site",
+  "private": true,
+  "scripts": {
+    "build:css": "sass --no-source-map --load-path=node_modules assets/scss:assets/css",
+    "watch:css": "sass --watch --load-path=node_modules assets/scss:assets/css"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  },
+  "dependencies": {
+    "@picocss/pico": "^2.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Radio tower with EU stars">
+  <rect width="64" height="64" rx="12" fill="#cfe6f6"/>
+
+  <g fill="#1b4d7a" stroke="#1b4d7a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 14v28"/>
+    <path d="M26 42h12"/>
+    <path d="M24 48h16"/>
+    <path d="M30 24l4 0"/>
+    <path d="M28 30l8 0"/>
+    <path d="M26 36l12 0"/>
+    <path d="M32 14l-8 20"/>
+    <path d="M32 14l8 20"/>
+  </g>
+
+  <g fill="#f1b81e">
+    <circle cx="32" cy="6" r="1.2"/>
+    <circle cx="41" cy="8.4" r="1.2"/>
+    <circle cx="48.6" cy="15.4" r="1.2"/>
+    <circle cx="51" cy="24" r="1.2"/>
+    <circle cx="48.6" cy="32.6" r="1.2"/>
+    <circle cx="41" cy="39.6" r="1.2"/>
+    <circle cx="32" cy="42" r="1.2"/>
+    <circle cx="23" cy="39.6" r="1.2"/>
+    <circle cx="15.4" cy="32.6" r="1.2"/>
+    <circle cx="13" cy="24" r="1.2"/>
+    <circle cx="15.4" cy="15.4" r="1.2"/>
+    <circle cx="23" cy="8.4" r="1.2"/>
+  </g>
+</svg>

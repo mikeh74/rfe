@@ -1,0 +1,156 @@
+@use "@picocss/pico/scss/pico";
+
+:root {
+  --bg: #f7f4ef;
+  --text: #1f1b16;
+
+  --primary: hsl(20, 50%, 45%);
+  --primary-light: color-mix(in srgb, var(--primary) 85%, white);
+  --primary-extra-light: color-mix(in srgb, var(--primary) 70%, white);
+  --primary-dark: color-mix(in srgb, var(--primary) 85%, black);
+  --primary-extra-dark: color-mix(in srgb, var(--primary) 70%, black);
+
+  --secondary: hsl(211, 50%, 30%);
+  --secondary-light: color-mix(in srgb, var(--secondary) 85%, white);
+  --secondary-extra-light: color-mix(in srgb, var(--secondary) 70%, white);
+  --secondary-dark: color-mix(in srgb, var(--secondary) 85%, black);
+  --secondary-extra-dark: color-mix(in srgb, var(--secondary) 70%, black);
+
+  --accent: hsl(98, 50%, 39%);
+  --accent-light: color-mix(in srgb, var(--accent) 85%, white);
+  --accent-extra-light: color-mix(in srgb, var(--accent) 70%, white);
+  --accent-dark: color-mix(in srgb, var(--accent) 85%, black);
+  --accent-extra-dark: color-mix(in srgb, var(--accent) 70%, black);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  background: white;
+}
+
+body {
+  max-width: 1400px;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: white;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.page {
+  max-width: 2200px;
+  margin: auto;
+}
+
+body > header, body > footer {
+  padding: 4rem 0 2rem;
+}
+
+.site-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.25rem;
+}
+
+.site-header a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.tagline {
+  margin: 0 0 2rem;
+  color: #5c5247;
+}
+
+.content {
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.content a {
+  color: var(--accent);
+}
+
+body > footer {
+  margin: 4rem 0 2rem;
+  color: #5c5247;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  min-height: 300px;
+  background: var(--accent);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
