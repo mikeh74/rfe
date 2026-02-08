@@ -3,19 +3,29 @@
 
 <head>
   {% include head.html %}
-</head>
 
+
+  {% if page.banner_image %}
+    <style>
+      .banner {
+        --banner-image: url('{{ page.banner_image | relative_url }}');
+      }
+    </style>
+  {% endif %}
+
+</head>
 <body>
   {% include header.html %}
+  {% if page.banner_title or page.banner_tagline or page.banner_image %}
+    {% include banner.html %}
+  {% endif %}
   <main class="page">
-    <!-- <section class="content"> -->
+    <div class="container">
       {{ content }}
-    <!-- </section> -->
+    </div>
   </main>
-  <footer class="site-footer">
-    © Copyright {{ site.time | date: "%Y" }} {{ site.author }}
-  </footer>
+  {% include footer.html %}
 
-  <script src="./assets/js/main.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
