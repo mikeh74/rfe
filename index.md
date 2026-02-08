@@ -6,7 +6,7 @@ banner_title: Radio Free Europe
 banner_tagline: Yet another developer blog site.
 ---
 
-## Featured posts
+## Latest Posts
 
 {% if site.posts.size > 0 %}
   <div class="featured-posts">

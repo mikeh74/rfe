@@ -1,28 +1,28 @@
 @use "@picocss/pico/scss/pico";
-
 @use "./pico_overrides";
+@use "./posts";
 
 :root {
   --bg: #f7f4ef;
   --text: #1f1b16;
 
   --primary: hsl(20, 50%, 45%);
-  --primary-light: color-mix(in srgb, var(--primary) 85%, white);
-  --primary-extra-light: color-mix(in srgb, var(--primary) 70%, white);
-  --primary-dark: color-mix(in srgb, var(--primary) 85%, black);
-  --primary-extra-dark: color-mix(in srgb, var(--primary) 70%, black);
+  --primary-light: color-mix(in srgb, var(--primary) 60%, white);
+  --primary-extra-light: color-mix(in srgb, var(--primary) 30%, white);
+  --primary-dark: color-mix(in srgb, var(--primary) 60%, black);
+  --primary-extra-dark: color-mix(in srgb, var(--primary) 30%, black);
 
   --secondary: hsl(211, 50%, 30%);
-  --secondary-light: color-mix(in srgb, var(--secondary) 85%, white);
-  --secondary-extra-light: color-mix(in srgb, var(--secondary) 70%, white);
-  --secondary-dark: color-mix(in srgb, var(--secondary) 85%, black);
-  --secondary-extra-dark: color-mix(in srgb, var(--secondary) 70%, black);
+  --secondary-light: color-mix(in srgb, var(--secondary) 60%, white);
+  --secondary-extra-light: color-mix(in srgb, var(--secondary) 30%, white);
+  --secondary-dark: color-mix(in srgb, var(--secondary) 60%, black);
+  --secondary-extra-dark: color-mix(in srgb, var(--secondary) 30%, black);
 
   --accent: hsl(98, 50%, 39%);
-  --accent-light: color-mix(in srgb, var(--accent) 85%, white);
-  --accent-extra-light: color-mix(in srgb, var(--accent) 70%, white);
-  --accent-dark: color-mix(in srgb, var(--accent) 85%, black);
-  --accent-extra-dark: color-mix(in srgb, var(--accent) 70%, black);
+  --accent-light: color-mix(in srgb, var(--accent) 60%, white);
+  --accent-extra-light: color-mix(in srgb, var(--accent) 30%, white);
+  --accent-dark: color-mix(in srgb, var(--accent) 60%, black);
+  --accent-extra-dark: color-mix(in srgb, var(--accent) 30%, black);
 }
 
 body {
@@ -65,135 +65,7 @@ body > header, body > footer {
   padding: 2rem 0 3rem;
 }
 
-.post-list {
-  list-style: none;
-  padding: 0;
-  margin: 1.5rem 0 0;
-  display: grid;
-  gap: 0.75rem;
-}
-
-.post-list li {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1rem;
-  align-items: baseline;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--primary-extra-light);
-  padding-bottom: 0.5rem;
-}
-
-.post-list a {
-  font-weight: 600;
-}
-
-.post-date {
-  color: var(--secondary-dark);
-  font-size: 0.9rem;
-  white-space: nowrap;
-}
-
-.tag-filter {
-  margin-top: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.tag-button {
-  border: 1px solid var(--primary-extra-light);
-  color: var(--secondary-dark);
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.tag-button.is-active {
+.bg-light {
   background: var(--primary-extra-light);
   border-color: var(--primary);
-  color: var(--primary-dark);
-}
-
-.post-index {
-  margin-top: 1.5rem;
-  display: grid;
-  gap: 1rem;
-}
-
-.post-card {
-  border: 1px solid var(--primary-extra-light);
-  border-radius: 10px;
-  padding: 1rem 1.25rem;
-}
-
-.post-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1rem;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.post-tags {
-  list-style: none;
-  padding: 0;
-  margin: 0.75rem 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-
-.post-tags li {
-  list-style: none !important;
-  border: 1px solid var(--secondary-extra-light);
-  color: var(--secondary-dark);
-  font-size: 0.75rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 999px;
-}
-
-.no-posts {
-  margin-top: 1.5rem;
-  color: var(--secondary-dark);
-}
-
-.featured-posts {
-  margin-top: 1.5rem;
-  display: grid;
-  gap: 1.5rem;
-}
-
-.featured-post {
-  padding: 1.25rem 1.5rem;
-  border: 1px solid var(--primary-extra-light);
-  border-radius: 12px;
-  box-shadow: 0 12px 24px rgba(31, 27, 22, 0.08);
-}
-
-.featured-post h3 {
-  margin-top: 0;
-}
-
-.post-tease {
-  color: var(--text);
-  margin-bottom: 1rem;
-}
-
-.read-more {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.45rem 0.85rem;
-  border-radius: 999px;
-  border: 1px solid var(--secondary-extra-light);
-  color: var(--secondary-dark);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.read-more:hover {
-  border-color: var(--secondary);
-  color: var(--secondary);
 }

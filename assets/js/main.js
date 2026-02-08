@@ -60,5 +60,3 @@ if (document.readyState === "loading") {
 } else {
   initializePage();
 }
-
-

@@ -2837,66 +2837,6 @@ textarea,
   --pico-nav-link-spacing-horizontal: 0.5rem;
 }
 
-:root {
-  --bg: #f7f4ef;
-  --text: #1f1b16;
-  --primary: hsl(20, 50%, 45%);
-  --primary-light: color-mix(in srgb, var(--primary) 85%, white);
-  --primary-extra-light: color-mix(in srgb, var(--primary) 70%, white);
-  --primary-dark: color-mix(in srgb, var(--primary) 85%, black);
-  --primary-extra-dark: color-mix(in srgb, var(--primary) 70%, black);
-  --secondary: hsl(211, 50%, 30%);
-  --secondary-light: color-mix(in srgb, var(--secondary) 85%, white);
-  --secondary-extra-light: color-mix(in srgb, var(--secondary) 70%, white);
-  --secondary-dark: color-mix(in srgb, var(--secondary) 85%, black);
-  --secondary-extra-dark: color-mix(in srgb, var(--secondary) 70%, black);
-  --accent: hsl(98, 50%, 39%);
-  --accent-light: color-mix(in srgb, var(--accent) 85%, white);
-  --accent-extra-light: color-mix(in srgb, var(--accent) 70%, white);
-  --accent-dark: color-mix(in srgb, var(--accent) 85%, black);
-  --accent-extra-dark: color-mix(in srgb, var(--accent) 70%, black);
-}
-
-body {
-  margin: 0;
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.banner {
-  min-height: 300px;
-  background: var(--accent);
-  background-image: var(--banner-image, none);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 2.5rem 0;
-  color: #fff;
-}
-
-.banner-card {
-  --pico-color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 1.5rem;
-  border-radius: 8px;
-}
-
-.banner-card h1 {
-  --pico-color: #fff;
-}
-
-body > header, body > footer {
-  padding: 1rem;
-}
-
-.page {
-  padding: 2rem 0 3rem;
-}
-
 .post-list {
   list-style: none;
   padding: 0;
@@ -3028,4 +2968,69 @@ body > header, body > footer {
 .read-more:hover {
   border-color: var(--secondary);
   color: var(--secondary);
+}
+
+:root {
+  --bg: #f7f4ef;
+  --text: #1f1b16;
+  --primary: hsl(20, 50%, 45%);
+  --primary-light: color-mix(in srgb, var(--primary) 60%, white);
+  --primary-extra-light: color-mix(in srgb, var(--primary) 30%, white);
+  --primary-dark: color-mix(in srgb, var(--primary) 60%, black);
+  --primary-extra-dark: color-mix(in srgb, var(--primary) 30%, black);
+  --secondary: hsl(211, 50%, 30%);
+  --secondary-light: color-mix(in srgb, var(--secondary) 60%, white);
+  --secondary-extra-light: color-mix(in srgb, var(--secondary) 30%, white);
+  --secondary-dark: color-mix(in srgb, var(--secondary) 60%, black);
+  --secondary-extra-dark: color-mix(in srgb, var(--secondary) 30%, black);
+  --accent: hsl(98, 50%, 39%);
+  --accent-light: color-mix(in srgb, var(--accent) 60%, white);
+  --accent-extra-light: color-mix(in srgb, var(--accent) 30%, white);
+  --accent-dark: color-mix(in srgb, var(--accent) 60%, black);
+  --accent-extra-dark: color-mix(in srgb, var(--accent) 30%, black);
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.banner {
+  min-height: 300px;
+  background: var(--accent);
+  background-image: var(--banner-image, none);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2.5rem 0;
+  color: #fff;
+}
+
+.banner-card {
+  --pico-color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.banner-card h1 {
+  --pico-color: #fff;
+}
+
+body > header, body > footer {
+  padding: 1rem;
+}
+
+.page {
+  padding: 2rem 0 3rem;
+}
+
+.bg-light {
+  background: var(--primary-extra-light);
+  border-color: var(--primary);
 }
