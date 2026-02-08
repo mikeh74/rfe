@@ -14,6 +14,9 @@ build-css:
 serve: build-css
 	$(JEKYLL) serve --livereload
 
+dev: ## Run development mode (watch CSS + serve Jekyll)
+	npm run dev
+
 install:
 	bundle install
 	$(NPM) install

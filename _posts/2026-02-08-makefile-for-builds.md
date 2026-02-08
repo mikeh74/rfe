@@ -108,3 +108,16 @@ ties everything together. You get:
 
 When you want one command to orchestrate Python, containers, and asset builds,
 Make is still a strong option.
+
+## Limitations
+
+Make is most useful as a simple task runner, the commands should be focussed
+and you can then use them together to build more complex workflows.
+
+If you are finding you are trying to build more conditional logic into your
+makefile then you should potentially be pushing that back into other tools,
+such as your package.json or into a python script or other language.
+
+## Resources 
+
+[Make Documentation](https://www.gnu.org/software/make/)

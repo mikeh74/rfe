@@ -2874,6 +2874,7 @@ textarea,
 
 .tag-button {
   border: 1px solid var(--primary-extra-light);
+  background: white;
   color: var(--secondary-dark);
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
@@ -2894,10 +2895,21 @@ textarea,
   gap: 1rem;
 }
 
+@media (min-width: 600px) {
+  .post-index {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .post-index {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .post-card {
   border: 1px solid var(--primary-extra-light);
   border-radius: 10px;
   padding: 1rem 1.25rem;
+  background: #fff;
 }
 
 .post-meta {
@@ -2941,6 +2953,7 @@ textarea,
   padding: 1.25rem 1.5rem;
   border: 1px solid var(--primary-extra-light);
   border-radius: 12px;
+  background: color-mix(in srgb, var(--accent) 6%, white);
   box-shadow: 0 12px 24px rgba(31, 27, 22, 0.08);
 }
 
