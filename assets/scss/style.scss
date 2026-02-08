@@ -27,7 +27,6 @@
 
 body {
   margin: 0;
-  background: white;
 }
 
 .container {
@@ -103,7 +102,6 @@ body > header, body > footer {
 
 .tag-button {
   border: 1px solid var(--primary-extra-light);
-  background: white;
   color: var(--secondary-dark);
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
@@ -128,7 +126,6 @@ body > header, body > footer {
   border: 1px solid var(--primary-extra-light);
   border-radius: 10px;
   padding: 1rem 1.25rem;
-  background: #fff;
 }
 
 .post-meta {
@@ -172,7 +169,6 @@ body > header, body > footer {
   padding: 1.25rem 1.5rem;
   border: 1px solid var(--primary-extra-light);
   border-radius: 12px;
-  background: color-mix(in srgb, var(--accent) 6%, white);
   box-shadow: 0 12px 24px rgba(31, 27, 22, 0.08);
 }
 
