@@ -51,12 +51,12 @@
 
         if (item) {
           var preview = item.content.substring(0, 200) + '...';
-          
-          html += '<div class="search-result">';
+
+          html += '<article class="search-result">';
           html += '<h3><a href="' + item.url + '">' + item.title + '</a></h3>';
           html += '<div class="search-result-date">' + item.date + '</div>';
           html += '<div class="search-result-preview">' + preview + '</div>';
-          html += '</div>';
+          html += '</article>';
         }
       });
 

@@ -3015,23 +3015,28 @@ body {
 
 .banner {
   min-height: 300px;
-  background: var(--accent);
+  background: var(--primary-extra-dark);
   background-image: var(--banner-image, none);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 2.5rem 0;
   color: #fff;
+  border-radius: var(--pico-border-radius);
+  position: relative;
 }
 
-.banner-card {
+.banner-content {
   --pico-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: rgba(0, 0, 0, 0.5);
   padding: 1.5rem;
-  border-radius: 8px;
 }
 
-.banner-card h1 {
+.banner-content h1 {
   --pico-color: #fff;
 }
 
@@ -3047,3 +3052,5 @@ body > header, body > footer {
   background: var(--primary-extra-light);
   border-color: var(--primary);
 }
+
+/*# sourceMappingURL=style.css.map */

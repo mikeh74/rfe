@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
   <link rel="icon" href="{{ "/assets/images/favicon.svg" | relative_url }}" type="image/svg+xml">
 
   {% if page.banner_image %}
@@ -18,12 +18,13 @@
 
 </head>
 <body>
-  {% include header.html %}
-  {% if page.banner_title or page.banner_tagline or page.banner_image %}
-    {% include banner.html %}
-  {% endif %}
   <main class="page">
     <div class="container">
+
+      {% include header.html %}
+      {% if page.banner_title or page.banner_tagline or page.banner_image %}
+        {% include banner.html %}
+      {% endif %}
       {{ content }}
     </div>
   </main>

@@ -45,7 +45,6 @@ Using Solr means tapping into the power of Lucene, which provides:
 1. Install Solr and set up a core for your project.
 2. Configure Haystack to use the Solr backend in your Django settings:
    ```python
-   # filepath: /Users/mikehorrocks/Projects/devnotes/developer-notes/settings.py
    HAYSTACK_CONNECTIONS = {
        'default': {
            'ENGINE': 'haystack.backends.solr_backend.SolrEngine',
