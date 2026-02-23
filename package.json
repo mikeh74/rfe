@@ -2,8 +2,8 @@
   "name": "rfe-site",
   "private": true,
   "scripts": {
-    "build:css": "sass --no-source-map --load-path=node_modules assets/scss:assets/css",
-    "watch:css": "sass --watch --load-path=node_modules assets/scss:assets/css",
+    "build:css": "sass --quiet-deps --no-source-map --load-path=node_modules assets/scss:assets/css",
+    "watch:css": "sass --quiet-deps --watch --load-path=node_modules assets/scss:assets/css",
     "build": "npm run build:css && bundle exec jekyll build",
     "dev": "npm run watch:css & bundle exec jekyll serve"
   },
