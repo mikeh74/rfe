@@ -1,24 +1,25 @@
 @use "@picocss/pico/scss/pico";
 @use "./pico_overrides";
 @use "./posts";
+@use "./utils";
 
 :root {
   --bg: #f7f4ef;
   --text: #1f1b16;
 
-  --primary: hsl(20, 50%, 45%);
+  --primary: hsl(316, 50%, 33%);
   --primary-light: color-mix(in srgb, var(--primary) 60%, white);
   --primary-extra-light: color-mix(in srgb, var(--primary) 30%, white);
   --primary-dark: color-mix(in srgb, var(--primary) 60%, black);
   --primary-extra-dark: color-mix(in srgb, var(--primary) 30%, black);
 
-  --secondary: hsl(211, 50%, 30%);
+  --secondary: hsl(45, 50%, 45%);
   --secondary-light: color-mix(in srgb, var(--secondary) 60%, white);
   --secondary-extra-light: color-mix(in srgb, var(--secondary) 30%, white);
   --secondary-dark: color-mix(in srgb, var(--secondary) 60%, black);
   --secondary-extra-dark: color-mix(in srgb, var(--secondary) 30%, black);
 
-  --accent: hsl(98, 50%, 39%);
+  --accent: hsl(249, 60%, 55%);
   --accent-light: color-mix(in srgb, var(--accent) 60%, white);
   --accent-extra-light: color-mix(in srgb, var(--accent) 30%, white);
   --accent-dark: color-mix(in srgb, var(--accent) 60%, black);

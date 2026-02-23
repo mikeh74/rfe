@@ -69,6 +69,7 @@
 }
 
 .post-card {
+  position: relative;
   border: 1px solid var(--primary-extra-light);
   border-radius: 10px;
   padding: 1rem 1.25rem;
@@ -113,6 +114,7 @@
 }
 
 .featured-post {
+  position: relative;
   padding: 1.25rem 1.5rem;
   border: 1px solid var(--primary-extra-light);
   border-radius: 12px;
@@ -122,6 +124,7 @@
 
 .featured-post h3 {
   margin-top: 0;
+  color: var(--primary);
 }
 
 .post-tease {

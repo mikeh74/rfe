@@ -21,7 +21,7 @@ permalink: /posts/
       {% capture tag_slugs %}{% for tag in post.tags %}{{ tag | slugify }} {% endfor %}{% endcapture %}
       <article class="post-card" data-post-item data-tags="{{ tag_slugs | strip }}">
         <div class="post-meta">
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <a class="stretched-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
           <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
         </div>
         {% if post.tags.size > 0 %}
