@@ -1,18 +1,14 @@
 <header class="site-header">
-  <div class="container">
-    <nav>
-      <ul>
-        <li>
-          <a class="bg-light" href="{{ "/" | relative_url }}">
-            <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" class="logo">
-          </a>
-        </li>
-      </ul>
-      <ul>
-        <li><a href="{{ "/posts" | relative_url }}">Posts</a></li>
-        <li><a href="{{ "/search" | relative_url }}">Search</a></li>
-        <!-- <li><a href="{{ "/contact" | relative_url }}">Contact</a></li> -->
-      </ul>
+  <div class="site-nav">
+    <a class="brand" href="{{ "/" | relative_url }}">
+      <!-- <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" class="logo"> -->
+      <span>{{ site.title }}</span>
+    </a>
+
+    <nav aria-label="Primary navigation">
+      <a href="{{ "/posts/" | relative_url }}" {% if page.url == "/posts/" %}aria-current="page"{% endif %}>Posts</a>
+      <a href="{{ "/search/" | relative_url }}" {% if page.url == "/search/" %}aria-current="page"{% endif %}>Search</a>
+      <a href="{{ "/about/" | relative_url }}" {% if page.url == "/about/" %}aria-current="page"{% endif %}>About</a>
     </nav>
   </div>
 </header>

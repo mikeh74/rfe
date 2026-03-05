@@ -4,6 +4,10 @@ title: Search
 permalink: /search/
 ---
 
+# Search
+
+Find posts by title, tags, or keywords.
+
 <div class="search-container">
   <input type="text" id="search-input" placeholder="Search posts..." autocomplete="off">
   <div id="results-container"></div>
