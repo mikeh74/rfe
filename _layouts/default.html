@@ -22,10 +22,10 @@
 
 </head>
 <body>
+  {% include header.html %}
+
   <main class="page">
     <div class="container">
-
-      {% include header.html %}
       {% if page.banner_title or page.banner_tagline or page.banner_image %}
         {% include banner.html %}
       {% endif %}
