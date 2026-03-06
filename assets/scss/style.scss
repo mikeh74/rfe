@@ -166,10 +166,11 @@ body > .site-header {
 }
 
 .menu-toggle {
+  --pico-spacing: 0;
   display: none;
   align-items: center;
   gap: 0.45rem;
-  padding: 0.4rem 0.72rem;
+  // padding: 0.4rem 0.72rem;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: #ffffff;
