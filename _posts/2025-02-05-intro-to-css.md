@@ -2,6 +2,10 @@
 layout: post
 title: "Intro to CSS"
 tags: [CSS]
+banner_image: /assets/images/IMG_8901.jpg
+banner_title: Intro to CSS
+banner_tagline: A beginner's guide to Cascading Style Sheets.
+
 ---
 
 CSS (Cascading Style Sheets) is the language that brings life and style to the web. While HTML provides the structure and content of a webpage, CSS is what makes it visually appealing, controlling everything from colors and fonts to layouts and animations.

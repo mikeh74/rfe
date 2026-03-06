@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Home"
-banner_image: /assets/images/IMG_8365.jpg
+banner_image: /assets/images/IMG_8928.jpg
 banner_title: Radio Free Europe
 banner_tagline: Yet another developer blog site.
 ---

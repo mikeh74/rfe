@@ -1,0 +1,47 @@
+.featured-posts > *,
+.post-index > *,
+#results-container > * {
+  animation: reveal-up 0.45s ease both;
+}
+
+.featured-posts > :nth-child(2),
+.post-index > :nth-child(2),
+#results-container > :nth-child(2) {
+  animation-delay: 0.06s;
+}
+
+.featured-posts > :nth-child(3),
+.post-index > :nth-child(3),
+#results-container > :nth-child(3) {
+  animation-delay: 0.12s;
+}
+
+.featured-posts > :nth-child(4),
+.post-index > :nth-child(4),
+#results-container > :nth-child(4) {
+  animation-delay: 0.18s;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.45rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

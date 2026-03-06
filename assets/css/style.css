@@ -3424,11 +3424,7 @@ body.is-mobile-nav-open .mobile-nav-panel {
   }
 }
 .post > article {
-  max-width: 760px;
   margin: 0 auto;
-  padding: clamp(1.15rem, 3vw, 1.8rem);
-  border: 1px solid var(--line);
-  border-radius: 1rem;
   background: var(--surface);
   box-shadow: var(--shadow-soft);
 }

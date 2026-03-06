@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(48rem 28rem at 95% -10%, rgba(15, 118, 110, 0.17), transparent 72%),
+    radial-gradient(42rem 26rem at -10% -15%, rgba(194, 125, 61, 0.14), transparent 72%),
+    linear-gradient(180deg, #f8fafb 0%, var(--bg) 64%);
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+p,
+li {
+  color: #1e2934;
+}
+
+a {
+  color: var(--accent-strong);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--accent);
+}
+
+.page {
+  --page-top-space: 1.1rem;
+  padding: var(--page-top-space) 0 3.5rem;
+  animation: page-enter 0.45s ease both;
+}
