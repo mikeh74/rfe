@@ -1,14 +1,14 @@
 <header class="site-header">
   {% capture nav_links %}
-    <a href="{{ "/posts/" | relative_url }}" {% if page.url == "/posts/" %}aria-current="page"{% endif %}>Posts</a>
-    <a href="{{ "/search/" | relative_url }}" {% if page.url == "/search/" %}aria-current="page"{% endif %}>Search</a>
-    <a href="{{ "/about/" | relative_url }}" {% if page.url == "/about/" %}aria-current="page"{% endif %}>About</a>
-    <a href="{{ "/contact/" | relative_url }}" {% if page.url == "/contact/" %}aria-current="page"{% endif %}>Contact</a>
+    <a href="{{ '/posts/' | relative_url }}" {% if page.url == '/posts/' %}aria-current="page"{% endif %}>Posts</a>
+    <a href="{{ '/search/' | relative_url }}" {% if page.url == '/search/' %}aria-current="page"{% endif %}>Search</a>
+    <a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}aria-current="page"{% endif %}>About</a>
+    <!-- <a href="{{ '/contact/' | relative_url }}" {% if page.url == '/contact/' %}aria-current="page"{% endif %}>Contact</a> -->
   {% endcapture %}
 
   <div class="site-header-inner container">
     <div class="site-nav">
-      <a class="brand" href="{{ "/" | relative_url }}">
+      <a class="brand" href="{{ '/' | relative_url }}">
         <!-- <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" class="logo"> -->
         <span>{{ site.title }}</span>
       </a>
