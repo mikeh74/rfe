@@ -67,7 +67,8 @@ a:focus-visible {
 }
 
 .page {
-  padding: 1.1rem 0 3.5rem;
+  --page-top-space: 1.1rem;
+  padding: var(--page-top-space) 0 3.5rem;
   animation: page-enter 0.45s ease both;
 }
 
@@ -360,6 +361,17 @@ body.is-mobile-nav-open .mobile-nav-panel {
   color: rgba(247, 251, 252, 0.9);
   font-size: 1.02rem;
   max-width: 56ch;
+}
+
+@media (max-width: 900px), (max-width: 1024px) and (orientation: portrait) {
+  .container > .banner:first-child {
+    margin-top: calc(-1 * var(--page-top-space));
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+    border-radius: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+  }
 }
 
 .post > article {
